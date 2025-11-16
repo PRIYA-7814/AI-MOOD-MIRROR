@@ -1,8 +1,5 @@
 # Recommended dependencies for deployment (pin exact versions for reproducible deploys)
 streamlit
-disable_deepface=1
-tensorflow==2.20.0
-tf-keras
 opencv-python
 numpy
 pandas
@@ -16,5 +13,6 @@ mediapipe
 #   lighter fallback backends.
 # - To pin exact versions from your environment, run:
 #   python -m pip freeze > requirements.txt
+
 
 
