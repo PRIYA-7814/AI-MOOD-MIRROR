@@ -1,0 +1,18 @@
+# Recommended dependencies for deployment (pin exact versions for reproducible deploys)
+streamlit
+deepface
+tensorflow==2.20.0
+tf-keras
+opencv-python
+numpy
+pandas
+fer
+mediapipe
+
+# Notes:
+# - Deploying DeepFace on Streamlit Cloud can be resource-heavy (TensorFlow + model downloads).
+#   If you want to avoid heavy downloads, set the environment variable `DISABLE_DEEPFACE=1`
+#   in the Streamlit app settings (Advanced -> Environment variables) so the app uses the
+#   lighter fallback backends.
+# - To pin exact versions from your environment, run:
+#   python -m pip freeze > requirements.txt
